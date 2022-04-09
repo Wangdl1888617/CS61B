@@ -10,7 +10,7 @@ public class AlphabetEasyPuzzle implements WorldState {
     char character;
 
     /**
-     * Creates a new AlphabetEasyPuzzle.
+     * Creates a new AlphabetEasyPuzzle.*
      */
     public AlphabetEasyPuzzle(char c) {
         character = c;
