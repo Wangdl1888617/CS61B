@@ -1,4 +1,5 @@
-/** Class that determines whether or not a year is a leap year.*
+<<<<<<< HEAD
+/** Class that determines whether or not a year is a leap year.**
 <<<<<<< HEAD
  *  @author Dali Wang *
 =======
@@ -16,6 +17,14 @@ public class LeapYear {
     
     
     /**Calls isLeapYear to print correct statement.
+=======
+/** Class that determines whether or not a year is a leap year.
+ *  @author YOUR NAME HERE **
+ */
+public class LeapYear {
+
+    /** Calls isLeapYear to print correct statement.
+>>>>>>> 2abf6beddc5a8c13cf343e0e4385acae7a290a8c
      *  @param  year to be analyzed*
      */
     private static void checkLeapYear(int year) {
