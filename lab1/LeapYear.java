@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-/** Class that determines whether or not a year is a leap year.**
+/** Class that determines whether or not a year is a leap year.*
 <<<<<<< HEAD
  *  @author Dali Wang *
 =======
