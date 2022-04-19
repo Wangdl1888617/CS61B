@@ -1,4 +1,4 @@
-public  class planet{
+public class Planet {
     public double xxPos;
     public double yyPos;
     public double xxVel;
@@ -16,7 +16,7 @@ public  class planet{
         mass = m;
         imgFileName = img;
     }
-    
+
     public Planet(Planet p){
         xxPos = p.xxPos;
         yyPos = p.yyPos;

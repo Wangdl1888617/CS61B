@@ -1,4 +1,4 @@
-public class NBody{
+public class NBody {
 
     public static double readRadius(String filename){
         In in = new In(filename);
