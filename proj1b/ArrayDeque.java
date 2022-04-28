@@ -2,7 +2,7 @@
  *   Deque implemented by array
  *  @author Dali Wang
  */
-public class ArrayDeque<T> {
+public class ArrayDeque<T> implements Deque<T> {
 
 	/** array to save data.*/
 	private T[] array;
@@ -30,11 +30,13 @@ public class ArrayDeque<T> {
 	/** decide if the deque is empty.
 	 * @return true if the deque is empty, vice versa.
 	 */
+	@Override
 	public boolean isEmpty() {
 		return size == 0;
 	}
 
 	/** return the size of the deque. */
+	@Override
 	public int size() {
 		return size;
 	}
@@ -93,6 +95,7 @@ public class ArrayDeque<T> {
 	/** add one item at the front of the deque.
 	 * @param item the item we want to add
 	 */
+	@Override
 	public void addFirst(T item) {
 		if (size == length - 1) {
 			grow();
@@ -105,6 +108,7 @@ public class ArrayDeque<T> {
 	/** add one item at the end of the deque.
 	 * @param item item we want to add
 	 */
+	@Override
 	public void addLast(T item) {
 		if (size == length - 1) {
 			grow();
@@ -117,6 +121,7 @@ public class ArrayDeque<T> {
 	/** remove the first item.
 	 * @return the removed first item
 	 */
+	@Override
 	public T removeFirst() {
 		if (length >= 16 && length / size >= 4) {
 			shrink();
@@ -133,6 +138,7 @@ public class ArrayDeque<T> {
 	/** remove the last item.
 	 * @return the removed last item
 	 */
+	@Override
 	public T removeLast() {
 		if (length >= 16 && length / size >= 4) {
 			shrink();
@@ -148,6 +154,7 @@ public class ArrayDeque<T> {
 	/** return the item indexed at index.
 	 * @param index index
 	 */
+	@Override
 	public T get(int index) {
 		if (index >= size) {
 			return null;
@@ -160,6 +167,7 @@ public class ArrayDeque<T> {
 	}
 
 	/** print the entire deque from front to end. */
+	@Override
 	public void printDeque() {
 		int ptr = front;
 		while (ptr != last) {
